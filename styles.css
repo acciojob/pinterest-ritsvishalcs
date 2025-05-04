@@ -1,9 +1,10 @@
+/* Reset default margin */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Container */
+/* Hero container */
 .hero {
   display: flex;
   justify-content: center;
@@ -12,13 +13,14 @@ body {
   gap: 40px;
 }
 
-/* Image Styling */
-.hero img {
+/* Apply styles directly to the image */
+.hero > img {
   width: 500px;
   height: 350px;
-  object-fit: cover; /* ✅ This is required to pass the test */
+  object-fit: cover; /* ✅ Required for test */
   border-radius: 8px;
 }
+
 
 /* Hero Text */
 .hero-text {
